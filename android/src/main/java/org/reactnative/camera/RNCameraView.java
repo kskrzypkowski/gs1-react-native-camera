@@ -354,6 +354,7 @@ public class RNCameraView extends CameraView implements LifecycleEventListener, 
     }
 
     hints.put(DecodeHintType.POSSIBLE_FORMATS, decodeFormats);
+    hints.put(DecodeHintType.ASSUME_GS1, true);
     mMultiFormatReader.setHints(hints);
   }
 

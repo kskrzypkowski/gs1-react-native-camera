@@ -312,6 +312,7 @@ class RCTCameraViewFinder extends TextureView implements TextureView.SurfaceText
         }
 
         hints.put(DecodeHintType.POSSIBLE_FORMATS, decodeFormats);
+        hints.put(DecodeHintType.ASSUME_GS1, true);
         _multiFormatReader.setHints(hints);
     }
 
